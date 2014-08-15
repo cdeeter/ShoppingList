@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shopping List</title>
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/app.js"></script>
+</head>
+
+<body>
+	<section>
+		<div class="container0">
+			<div class="block">
+				<h1 class="title">SHOPPING LIST</h1><br /> 
+			</div>
+		<div class="container">
+			<br /><p>Enter the item and, if desired, the quantity in the text box.<Br />
+			Click the + button to add it to the list.<br /><br />
+			To select an item, click on it. Highlighted items turn <span class="color">this color</span>.<br /><Br />
+			To remove an item, click on the white "x" next to the item.<br />
+			</p><br /><br /><br />
+			<input type="text" name="itementer" id="itementer" placeholder="Enter Item (Quantity)">
+			<input type="button" name="add" id="addbutton" value="+" onClick="add('itementer', 'list')"><Br /> <br /><br /><br />
+			<div class="shoppingitems">
+				<ul id="list">
+
+				</ul>
+				</div>
+			<br /> <br /><br />
+			</div>
+	</section>
+</body>
+
+</html>
