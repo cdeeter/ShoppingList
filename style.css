@@ -89,12 +89,12 @@ body {
 	background-color: black;
 	color: white;
 	font-family: Tahoma, Arial;
-	margin: -25px 0px 0px 450px;
+	margin: -25px 0px 0px 50px;
 	z-index: 1000;
 }
 
 #addbutton {
-	display: block-inline;
+	display: inline=block;
 	margin-left: 10px;
 	padding: 5px;
 	background-color: black;
@@ -104,7 +104,20 @@ body {
 	width: 25px;
 }
 
-.container0 {
+#removeall {
+	display: inline=block;
+	margin: 0 auto;
+	padding: 5px;
+	background-color: black;
+	color: #FF99CC;
+	border: solid 1px white;
+	height: 25px;
+	width: 100px;
+	font-family: Tahoma, Arial;
+	font-size: 11px;
+}
+
+#container0 {
 	width: 400px;
 	margin: 0 auto;
 	margin-top: 100px;

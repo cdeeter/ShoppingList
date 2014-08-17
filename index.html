@@ -10,7 +10,7 @@
 
 <body>
 	<section>
-		<div container="container0">
+		<div id="container0">
 			<div class="block">
 				<h1 class="title">SHOPPING LIST</h1><br /> 
 			</div>
@@ -21,7 +21,8 @@
 			To remove an item, click on the white "x" next to the item.<br />
 			</p><br /><br /><br />
 			<input type="text" name="itementer" id="itementer" placeholder="Enter Item (Quantity)">
-			<input type="button" name="add" id="addbutton" value="+" onClick="add('itementer', 'list')"><Br /> <br /><br /><br />
+			<input type="button" name="add" id="addbutton" value="+" onClick="add('itementer', 'list')"><Br /><br /><input type="button" name="remove" id="removeall" value="Clear all list items"> 
+			<br /><br />
 			<div class="shoppingitems">
 				<ul id="list">
 

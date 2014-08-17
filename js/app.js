@@ -21,4 +21,9 @@ $(document).ready(function() {
 		$(this).remove();
 	});
 
+
+	$("#removeall").click(function() {
+		$("#list").empty();
+	});
+
 });
