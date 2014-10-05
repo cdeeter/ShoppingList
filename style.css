@@ -58,7 +58,7 @@ body {
 	position: relative;
 	height: 450px;
 	width: 400px;
-	border: 2px solid #FF99CC;
+	border: 2px solid cyan;
 	border-radius: 8px;
 	box-sizing: padding-box;
 	background-size: 140%;
@@ -74,7 +74,7 @@ body {
 
 .title {
 	font-size: 150%;
-	color: white;
+	color: cyan;
 	font-family: Tahoma, Arial;
 	font-weight: bold;
 	padding: 15px;
@@ -83,7 +83,7 @@ body {
 
 .block {
 	position: fixed;
-	border: 5px solid #FF99CC;
+	border: 5px solid cyan;
 	height: 50px;
 	width: 225px;
 	background-color: black;
@@ -98,7 +98,7 @@ body {
 	margin-left: 10px;
 	padding: 5px;
 	background-color: black;
-	color: #FF99CC;
+	color: cyan;
 	border: solid 1px white;
 	height: 25px;
 	width: 25px;
@@ -109,8 +109,8 @@ body {
 	margin: 0 auto;
 	padding: 5px;
 	background-color: black;
-	color: #FF99CC;
-	border: solid 1px white;
+	color: white;
+	border: solid 5px 1px 1px 5px white;
 	height: 25px;
 	width: 100px;
 	font-family: Tahoma, Arial;
