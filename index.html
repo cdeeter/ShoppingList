@@ -10,18 +10,18 @@
 
 <body>
 	<section>
-		<div id="container0">
-			<div class="block">
-				<h1 class="title">SHOPPING LIST</h1><br /> 
-			</div>
-			<div class="container">
+		<div id="container">
+				<h1 class="title">shopping list</h1><br /> 
+			<div class="contents">
 				<br /><p>Enter the item and, if desired, the quantity in the text box.<Br />
 				Click the + button to add it to the list, or press the "Enter" key.<br /><br />
 			To select an item, click on it. Highlighted items turn <span class="color">this color</span>.<br /><Br />
 			To remove an item, click on the white "x" next to the item.<br />
 			</p><br /><br /><br />
-			<input type="text" name="itementer" id="itementer" placeholder="Enter Item (Quantity)">
-			<input type="button" name="add" id="addbutton" value="+" onClick="add('itementer', 'list')"><Br /><br /><input type="button" name="remove" id="removeall" value="Clear all list items"> 
+            <fieldset class="item-add">
+			     <input type="text" name="itementer" id="itementer" placeholder="Enter Item (Quantity)">
+			     <input type="button" name="add" id="addbutton" value="+"><Br /><br /><input type="button" name="remove" id="removeall" value="Clear all list items"> 
+            </fieldset>
 			<br /><br />
 			<div class="shoppingitems">
 				<ul id="list">

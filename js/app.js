@@ -1,36 +1,40 @@
-//add items to list
-function add(itementer, list) {
-
-	var delete_item = "<div id='x'>x</div>"
-
-	$("#"+list).prepend("<li>"+$('input[id='+itementer+']').val()+"</li>").prepend("<div id='x'>x</div>");
-	$('#itementer').val('');
-
-}
-
-
 $(document).ready(function() {
+    
+    var $addBtn = $("#addbutton");
+        $rmvAllBtn = $("#removeall");
+        $itemEnter = $("#itementer");
+        $list = $("#list");
+        
+    
+    $addBtn.click(function() {
+        if ($itemEnter.val() == '') {
+            alert("Please enter an item!");
+        } else {
+            $list.prepend("<li><div id='rmv'>x</div>"+$itemEnter.val()+"</li>");
+            $itemEnter.val('');
+        }
+    });
 
-    //change color of selected item
-	$("#list").on("click", "li", function() {
-		$(this).toggleClass("click");
+    //delete items
+	$list.on("click", "#rmv", function(){
+		$(this).parent("li").remove();
+		$(this).remove();
 	});
     
-    //delete items
-	$("#list").on("click", "#x", function(){
-		$(this).next("li").remove();
-		$(this).remove();
+    //change color of selected item
+	$list.on("click", "li", function() {
+		$(this).toggleClass("click");
 	});
 
     //clear list
-	$("#removeall").click(function() {
-		$("#list").empty();
+	$rmvAllBtn.click(function() {
+		$list.empty();
 	});
 
     //add item on enter press
-	$("#itementer").keyup(function(event){
+	$itemEnter.keyup(function(event){
 		if(event.keyCode == 13) {
-			$("#addbutton").click();
+			$addBtn.click();
 		}
 	});
 
