@@ -56,31 +56,30 @@ body {
 .contents {
 	position: relative;
 	height: 100%;
-    min-height: 450px;
-	width: 475px;
+    min-height: 400px;
+	width: 400px;
 	border: 5px dotted cyan;
 	border-radius: 10px;
-	background-size: 140%;
-	padding-top: 10px;
 	text-align: center;
 	margin: 0 auto;
 	margin-top: -16px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 	color: white;
 	font-family: Tahoma, serif;
 	font-size: 14px;
+    padding: 30px;
 }
 
 .title {
 	position: relative;
-    font-size: 350%;
+    font-size: 400%;
 	background-color: black;
 	color: white;
-    letter-spacing: -3px;
+    letter-spacing: -4px;
 	font-family: Tahoma, Arial;
 	font-weight: bold;
     z-index: 100; 
-    margin-left: 25px;
+    margin-left: 40px;
 }
 
 #addbutton {
@@ -94,9 +93,10 @@ body {
 	border: solid 1px white;
 	height: 40px;
 	width: 40px;
-    font-size: 150%;
+	font-weight: bold;
+	font-size: 200%;
+	font-family: Arial;
     border-radius: 5px;
-    font-weight: bolder; 
     cursor: pointer;
 }
 
@@ -130,7 +130,7 @@ body {
 #container {
 	width: 500px;
 	margin: 0 auto;
-	margin-top: 100px;
+	margin-top: 50px;
 }
 
 #itementer {
@@ -189,4 +189,9 @@ li.click {
 
 .color {
 	color: #00FF99;
+}
+
+.bold {
+    font-weight: bold;
+    color: cyan;
 }

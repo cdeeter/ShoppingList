@@ -4,8 +4,11 @@
 	<meta charset="UTF-8">
 	<title>Shopping List</title>
 	<link rel="stylesheet" href="style.css" type="text/css"/>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
 	<script src="http://code.jquery.com/jquery.min.js"></script>
 	<script src="js/app.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    
 </head>
 
 <body>
@@ -13,22 +16,21 @@
 		<div id="container">
 				<h1 class="title">shopping list</h1><br /> 
 			<div class="contents">
-				<br /><p>Enter the item and, if desired, the quantity in the text box.<Br />
+				<p>Enter the item you want to add to your list into the text box.<Br />
 				Click the + button to add it to the list, or press the "Enter" key.<br /><br />
-			To select an item, click on it. Highlighted items turn <span class="color">this color</span>.<br /><Br />
-			To remove an item, click on the white "x" next to the item.<br />
-			</p><br /><br /><br />
-            <fieldset class="item-add">
-			     <input type="text" name="itementer" id="itementer" placeholder="Enter Item (Quantity)">
-			     <input type="button" name="add" id="addbutton" value="+"><Br /><br /><input type="button" name="remove" id="removeall" value="Clear all list items"> 
-            </fieldset>
-			<br /><br />
-			<div class="shoppingitems">
-				<ul id="list">
+                <span class="bold">To select an item</span>, click on it.  Highlighted items turn <span class="color">this color</span>.<br/><br/>
+                <span class="bold">To change the order</span> of the list items, click the item you want to move and drag it to its new place on the list.<br/><br/>
+                <span class="bold">To remove an item</span>, click on the white "x" next to the item.<br />
+                </p><br /><br /><br />
+                <fieldset class="item-add">
+			         <input type="text" name="itementer" id="itementer" placeholder="Enter Item">
+			         <input type="button" name="add" id="addbutton" value="+"><Br /><br /><input type="button" name="remove" id="removeall" value="Clear all list items"> 
+                </fieldset><br /><br />
+                <div class="shoppingitems">
+				    <ul id="list">
 
-				</ul>
+				    </ul>
 				</div>
-			<br /> <br /><br />
 			</div>
 		</div>
 	</section>

@@ -37,5 +37,8 @@ $(document).ready(function() {
 			$addBtn.click();
 		}
 	});
+    
+    //rearrange list items
+    $list.sortable();
 
 });
